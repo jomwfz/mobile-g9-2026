@@ -1,11 +1,28 @@
-# Sample Snack app
+# 📱 Mobile App Project (Group 9)
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+โปรเจกต์วิชา Mobile Application
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+---
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+## 🚀 ขั้นตอนการดึงโค้ดไปรันในเครื่อง (สำหรับสมาชิกในกลุ่ม)
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+### 1. Clone โปรเจกต์ลงเครื่อง
+* เปิดโปรแกรม **GitHub Desktop**
+* ไปที่ `File` > `Clone Repository...`
+* เลือกแท็บ **GitHub.com** แล้วเลือก Repository `mobile-g9-2026` จากนั้นกด **Clone**
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+### 2. เปิดโปรเจกต์และติดตั้ง Dependencies
+* เปิดโฟลเดอร์โปรเจกต์ใน **VS Code**
+* เปิด Terminal (`Ctrl + ` `) แล้วพิมพ์คำสั่ง:
+* 
+* ### 3. รันโปรเจกต์
+* พิมพ์คำสั่งเริ่มระบบ:
+
+* * สแกน QR Code ผ่านแอป **Expo Go** บนมือถือ (คอมพิวเตอร์และมือถือต้องต่อ Wi-Fi วงเดียวกัน)
+
+---
+
+## ⚠️ ข้อควรระวังในการทำงานร่วมกัน
+1. **ก่อนเริ่มเขียนโค้ดทุกครั้ง:** กดปุ่ม **Fetch origin / Pull origin** ใน GitHub Desktop เสมอ เพื่อดึงโค้ดล่าสุดจากเพื่อน
+2. **หลังเขียนโค้ดเสร็จ:** ให้ Commit พร้อมเขียนอธิบายงานที่ทำ แล้วกด **Push origin** ขึ้น GitHub
+3. **อย่าลบหรือแก้ไข:** ไฟล์ `package.json` และ `.gitignore` เล่นโดยไม่จำเป็น
