@@ -111,19 +111,14 @@ mobile-g9-2026/
 * **ติดตั้งแพ็กเกจสำหรับเว็บก่อน (พิมพ์ครั้งเดียว):**
   ```bash
   npx expo install react-dom react-native-web @expo/metro-runtime
-
-```
+  ```
 
 * **สั่งรันขึ้นเว็บ:**
 ```bash
 npx expo start --web
-
 ```
-
 
 *(หรือพิมพ์ `npx expo start` ตามปกติ แล้วกดปุ่มตัวอักษร `w` บนคีย์บอร์ด ระบบจะเปิดเว็บเบราว์เซอร์ให้ที่ `http://localhost:8081` ทันที)*
-
-```
 
 ---
 
