@@ -5,20 +5,8 @@
 
 ---
 
-## 👥 สมาชิกในกลุ่ม (Team Members)
-* **ชื่อโปรเจกต์:** GAYM
-* **ผู้จัดทำ:** Jimmy, Copter, Auto, Tatae (และสมาชิกในกลุ่ม 9)
-
----
-
-## 🛠️ สิ่งที่ต้องติดตั้งล่วงหน้า (Prerequisites)
-ก่อนเริ่มรันโปรเจกต์ ให้ทุกคนติดตั้งโปรแกรมเหล่านี้ให้เรียบร้อย:
-1. **Node.js** (แนะนำเวอร์ชัน LTS): [ดาวน์โหลดที่นี่](https://nodejs.org/)
-2. **Git**: [ดาวน์โหลดที่นี่](https://git-scm.com/)
-3. **VS Code**: แนะนำให้เปิดโปรเจกต์และทำงานผ่าน VS Code
-4. **Expo Go (บนมือถือ)**:
-   * [iOS App Store](https://apps.apple.com/app/expo-go/id982107779)
-   * [Android Google Play](https://play.google.com/store/apps/details?id=host.exp.exponent)
+## 👥 GAYM
+* by jimmy copter auto tatae 
 
 ---
 
