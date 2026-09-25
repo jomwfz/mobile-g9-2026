@@ -1,136 +1,56 @@
-# 📱 Mobile App Project (GAYM - Group 9)
+# Welcome to your Expo app 👋
 
-โปรเจกต์วิชา Mobile Application พัฒนาด้วย **React Native + Expo**  
-โครงสร้างโปรเจกต์ถูกดึงมาจาก Snack Expo และนำมาพัฒนาต่อบน VS Code / GitHub
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
----
+## Get started
 
-## 👥 GAYM
-* by jimmy copter auto tatae 
+1. Install dependencies
 
----
+   ```bash
+   npm install
+   ```
 
-## 🚀 ขั้นตอนการติดตั้งและรันครั้งแรก (สำหรับเพื่อนในกลุ่ม)
+2. Start the app
 
-### 1. โคลนโปรเจกต์ลงเครื่อง
-เปิด Terminal / Command Prompt หรือ Terminal ใน VS Code แล้วพิมพ์:
-```bash
-git clone https://github.com/jomwfz/mobile-g9-2026.git
-cd mobile-g9-2026
-```
+   ```bash
+   npx expo start
+   ```
 
-### 2. ติดตั้ง Dependencies (แพ็กเกจต่างๆ)
-> ⚠️ **ข้อสำคัญ:** เนื่องจากใน GitHub จะไม่มีโฟลเดอร์ `node_modules` ทุกคนต้องติดตั้งก่อนเสมอ:
-```bash
-npm install
-```
+In the output, you'll find options to open the app in a
 
-### 3. รันโปรเจกต์ (Start Expo)
-```bash
-npx expo start
-```
-หรือหากต้องการเคลียร์แคช:
-```bash
-npx expo start -c
-```
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-### 4. เปิดดูแอปพลิเคชัน
-* **ผ่านมือถือจริง:** เปิดแอป **Expo Go** บนมือถือ แล้วสแกน QR Code ที่แสดงขึ้นมาใน Terminal (ต้องเชื่อมต่อ Wi-Fi วงเดียวกันกับคอมพิวเตอร์)
-* **กด `w`**: เพื่อเปิดพรีวิวบน Web Browser
-* **กด `a`**: สำหรับเปิด Android Emulator (หากตั้งค่าไว้)
-* **กด `i`**: สำหรับเปิด iOS Simulator (สำหรับเครื่อง Mac)
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
----
+## Get a fresh project
 
-## 🔄 Workflow การทำงานและอัปเดตโค้ดร่วมกัน (Git Guide)
-
-### 📥 1. ดึงโค้ดล่าสุดจากเพื่อนก่อนเริ่มทำงานเสมอ
-ทุกครั้งที่จะเริ่มเขียนโค้ดใหม่ ให้ pull เวอร์ชันล่าสุดลงมาก่อน เพื่อป้องกัน code conflict:
-```bash
-git pull origin master
-```
-
----
-
-### 🌿 2. (แนะนำ) สร้าง Branch ของตัวเองในการทำงาน
-เพื่อไม่ให้โค้ดชนกัน แนะนำให้แต่ละคนแยก branch ทำงานของตัวเอง:
-```bash
-# สร้างและสลับไปยัง branch ของตัวเอง เช่น feature-login
-git checkout -b feature/<your-name-or-task>
-```
-
----
-
-### 📤 3. การบันทึกและส่งโค้ดขึ้น GitHub (Push Code)
-เมื่อเขียนโค้ดหรือแก้ไขงานเสร็จแล้ว:
+When you're ready, run:
 
 ```bash
-# ตรวจสอบไฟล์ที่มีการแก้ไข
-git status
-
-# เพิ่มไฟล์ทั้งหมดเข้า stage
-git add .
-
-# บันทึกประวัติการแก้ไข (เขียนอธิบายสั้นๆ ว่าทำอะไรไป)
-git commit -m "feat: เพิ่มหน้ารายละเอียดและปรับแต่ง UI"
-
-# ดึงโค้ดล่าสุดมาเช็คอีกรอบกันพลาด
-git pull origin master
-
-# อัปโหลดขึ้น GitHub
-# หากทำบน master:
-git push origin master
-
-# หรือหากทำบน branch ตัวเอง:
-git push origin feature/<your-name-or-task>
-```
-*(ถ้าสร้าง Branch เมื่อ push เสร็จแล้ว ให้ไปกด **Compare & pull request** บนหน้าเว็บ GitHub เพื่อให้เพื่อน/เจ้าของ repo ทำการ Merge เข้า `master`)*
-
----
-
-## 📁 โครงสร้างโปรเจกต์ (Project Structure)
-
-```text
-mobile-g9-2026/
-├── assets/          # ไฟล์รูปภาพ, ไอคอน และ static assets ต่างๆ
-├── components/      # ชิ้นส่วน UI ย่อยที่นำมาใช้ซ้ำ (Buttons, Cards, Modals ฯลฯ)
-├── screens/         # หน้าจอแต่ละหน้าของแอป (Home, Login, Profile ฯลฯ)
-├── src/             # โค้ดหลัก, utilities, หรือ API functions
-├── App.js           # Entry point หลักของแอป
-├── app.json         # การตั้งค่า configuration ของ Expo
-├── index.js         # Entry registration
-├── mockData.js      # ข้อมูลจำลองสำหรับทดสอบ UI
-├── theme.js         # กำหนดสี (Colors), ฟอนต์ และ Styles หลักของแอป
-└── package.json     # รายการ dependencies และ scripts
+npm run reset-project
 ```
 
----
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-### 🌐 การรันและทดสอบบน Web Browser
+### Other setup steps
 
-* **ติดตั้งแพ็กเกจสำหรับเว็บก่อน (พิมพ์ครั้งเดียว):**
-  ```bash
-  npx expo install react-dom react-native-web @expo/metro-runtime
-  ```
+- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
+- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
+- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
 
-* **สั่งรันขึ้นเว็บ:**
-```bash
-npx expo start --web
-```
+## Learn more
 
-*(หรือพิมพ์ `npx expo start` ตามปกติ แล้วกดปุ่มตัวอักษร `w` บนคีย์บอร์ด ระบบจะเปิดเว็บเบราว์เซอร์ให้ที่ `http://localhost:8081` ทันที)*
+To learn more about developing your project with Expo, look at the following resources:
 
----
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## ⚠️ ปัญหาที่พบบ่อย (Troubleshooting)
+## Join the community
 
-1. **เปิดแอปแล้วขึ้นจอแดง Error เกี่ยวกับ Module Not Found**
-   * แก้โดยลบโฟลเดอร์ `node_modules` และรัน `npm install` ใหม่อีกครั้ง
-2. **สแกน QR Code บนมือถือแล้วไม่โหลด / Connection Refused**
-   * เช็กว่ามือถือและคอมพิวเตอร์ต่อ Wi-Fi ตัวเดียวกันหรือไม่
-   * หรือรันด้วยคำสั่ง Tunnel:
-     ```bash
-     npx expo start --tunnel
-     ```
-3. **เจอ Git Conflict (โค้ดชนกันเวลา pull)**
-   * เปิด VS Code ไปที่ไฟล์ที่ชนกัน แล้วเลือก Accept Incoming Change หรือ Accept Current Change ตามความถูกต้อง จากนั้น commit และ push ใหม่อีกครั้ง
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
